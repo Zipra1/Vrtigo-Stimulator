@@ -1216,13 +1216,35 @@
 	)
 	(text "R1 controls current"
 		(exclude_from_sim no)
-		(at 143.51 62.484 0)
+		(at 143.51 61.214 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "cdb6de48-ff36-458e-915e-fc356e0312ef")
+	)
+	(global_label "E1"
+		(shape input)
+		(at 193.04 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "087de22f-7f49-4c22-9736-80f7f35d7a38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.3837 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "B1"
 		(shape input)
@@ -1378,6 +1400,28 @@
 			)
 		)
 	)
+	(global_label "Meter"
+		(shape input)
+		(at 116.84 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8492a13a-5f85-4aa9-8372-d0cff02738f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 124.9657 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "B1"
 		(shape input)
 		(at 107.95 119.38 180)
@@ -1396,28 +1440,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "E1"
-		(shape input)
-		(at 116.84 113.03 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8baf66ef-b8a3-431e-82fa-e29ee139dd0b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.1837 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -1466,6 +1488,28 @@
 			)
 		)
 	)
+	(global_label "E1"
+		(shape input)
+		(at 208.28 95.25 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a86e1f28-e012-4822-befa-cc8a333b4d8a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 208.28 100.5937 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A"
 		(shape input)
 		(at 86.36 111.76 180)
@@ -1484,28 +1528,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "E1"
-		(shape input)
-		(at 193.04 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e6fb1a81-6919-4bd6-9637-bbff1c233174")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.3837 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2161,7 +2183,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220R"
+		(property "Value" "220R +-1%"
 			(at 125.73 63.4999 0)
 			(effects
 				(font
@@ -2440,6 +2462,72 @@
 			(project ""
 				(path "/a73f8acd-9f34-478f-81c4-7ca1e9b5592a"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 212.09 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7229b36b-1f7d-4214-af11-008e22395292")
+		(property "Reference" "TP4"
+			(at 212.09 90.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 214.63 93.2179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "justPads_custom:2_3-1.5_2.5_1_1"
+			(at 217.17 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 212.09 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f396b35-47e9-4e4c-87da-ecb76067a1e1")
+		)
+		(instances
+			(project "Vrtigo-PCB"
+				(path "/a73f8acd-9f34-478f-81c4-7ca1e9b5592a"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -3094,6 +3182,72 @@
 			(project "Vrtigo-PCB"
 				(path "/a73f8acd-9f34-478f-81c4-7ca1e9b5592a"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 208.28 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6e33c62-6772-4ea1-a7d1-07bd7e9285a5")
+		(property "Reference" "TP3"
+			(at 208.28 90.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 210.82 93.2179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "justPads_custom:2_3-1.5_2.5_1_1"
+			(at 213.36 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 208.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa84a7f5-084f-428c-8b0f-31de671e1e57")
+		)
+		(instances
+			(project "Vrtigo-PCB"
+				(path "/a73f8acd-9f34-478f-81c4-7ca1e9b5592a"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
