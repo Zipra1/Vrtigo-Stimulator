@@ -1,0 +1,3 @@
+# This project is very very new, there is like. nothing here yet. Come back later?
+GVS stimulation device, primarily for use in Virtual Reality applications (such as VRChat) to provide a sense of movement when you are moved in the game. Could also theoretically be used to reduce motion sickness, but the main goal is haptics.
+Eventually, there will be two more repos: `Vertigo-Receiver` and `Vertigo-Server`
